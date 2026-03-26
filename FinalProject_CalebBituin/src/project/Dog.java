@@ -7,7 +7,7 @@ public class Dog {
 	
 
 	/*
-	 * THIS IS A TEST 2:41
+	 * THIS IS A TEST 3:10
 	 */
 
 	// --------------- FIELDS --------------- //
