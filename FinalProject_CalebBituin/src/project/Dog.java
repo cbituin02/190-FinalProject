@@ -4,11 +4,6 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Dog {
-	
-
-	/*
-	 * THIS IS A TEST 3:11
-	 */
 
 	// --------------- FIELDS --------------- //
 	private Scanner keyboard;
