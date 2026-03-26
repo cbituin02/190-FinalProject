@@ -5,6 +5,11 @@ import java.util.Random;
 
 public class Dog {
 	
+
+	/*
+	 * THIS IS A TEST 2:18
+	 */
+
 	// --------------- FIELDS --------------- //
 	private Scanner keyboard;
 	private String name;
