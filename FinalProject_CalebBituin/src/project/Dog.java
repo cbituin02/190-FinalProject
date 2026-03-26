@@ -6,7 +6,7 @@ import java.util.Random;
 public class Dog {
 	
 	/*
-	 * THIS IS A TEST
+	 * THIS IS A TEST 2:10
 	 */
 	
 	// --------------- FIELDS --------------- //
