@@ -20,12 +20,10 @@ public class Dog {
 	
 	private static int hunger = 50;
 	private int updateHunger;
-	private int newHunger;
 	
 	private static int energy = 50;
 	private int updateEnergy;
 	private int energyIndex;
-	private int newEnergy;
 	
 	private int sleepIndex;
 	
@@ -206,7 +204,7 @@ public class Dog {
 		int feedHungerCalc = hunger - randomFeedHungerValue;
 		
 		// set updateValues to new values
-		newHunger = feedHungerCalc;
+		int newHunger = feedHungerCalc;
 		this.updateHunger = newHunger;
 				
 		//setting result variable
@@ -247,7 +245,7 @@ public class Dog {
 		int newEnergyCalc = energy + randomFeedEnergyValue;
 		
 		// set updateValues to new values
-		newEnergy = newEnergyCalc;
+		int newEnergy = newEnergyCalc;
 		this.updateEnergy = newEnergy;
 		
 		// update default values to new values
@@ -266,14 +264,14 @@ public class Dog {
 			this.updateHunger = resultFeedHunger;
 			// set energy to previous value so it won't update
 			energy = previousEnergy;
-			System.out.println("Hunger Level: " + this.updateHunger + ". Energy Level: " + energy);
+			System.out.println("Hunger Level: " + this.updateHunger + ". Energy Level: " + previousEnergy);
 		} else if (newEnergy >= maxTotal) {
 			System.out.println(name + " has too much energy! YOU NEED TO PLAY WITH IT");
 			// set hunger to previous value so it won't update
 			hunger = previousHunger;
 			// set energy to maxTotal
 			this.updateEnergy = resultFeedEnergy;
-			System.out.println("Hunger Level: " + hunger + ". Energy Level: " + this.updateEnergy);
+			System.out.println("Hunger Level: " + previousHunger + ". Energy Level: " + this.updateEnergy);
 		} else {
 			System.out.println("Hunger Level: " + hunger + ". Energy Level: " + energy);
 		}
@@ -392,11 +390,23 @@ public class Dog {
 	}
 	
 	/*
+	 * FIX:
+	 * !! IF HUNGER OR ENERGY ARE AT MAX, AND YOU CALL A DIFFERENT METHOD THAN THE METHOD THAT WAS JUST !!
+	 * !!           USED, IT STILL UPDATES THE VALUE (HUNGER OR ENERGY) THAT ISN'T AT MAX               !!
+	 * 
+	 * 						!! METHODS SHOULD NOT BE ALLOWED TO UPDATE VALUES IF !!
+	 * 						!! EITHER HUNGER OR ENERGY ARE AT MAX OR MIN VALUES  !!
+	 * 
 	 * MAYBE:
-	 * WHEN USER CREATES NEW DOG, LET THE USER KEEP PLAYING WITH THE SAME DOG
-	 * AFTER CREATING IT.
+	 * LET USER TYPE NAME OF NEW DOG
+	 * CREATE NEW OBJECT OF DOG WITH THE NAME THE USER TYPED
 	 * LET THE USER TYPE PLAY, FEED, OR SLEEP TO CALL THE RESPECTIVE METHODS.
 	 * IF USER WANTS TO QUIT THEY CAN TYPE ABANDON.
+	 * 
+	 * FIX COMMENTS OF CODE
+	 * 
+	 * COPY PASTE CODE FOR CAT AND BIRD CLASS
+	 * CHANGE VALUES
 	 */
 	public static void main(String[] args) {
 		// Test scanner
