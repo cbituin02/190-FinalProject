@@ -8,7 +8,7 @@ import java.util.Random;
  * (HUNGER WITH HUNGER)
  * (ENERGY WITH ENERGY)
  */
-public class Cat{
+public class Cat extends Dog{
 
 	// --------------- FIELDS --------------- //
 	private Scanner keyboard;

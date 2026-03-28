@@ -34,7 +34,38 @@ public class Dog{
 	private int sleepIndex;
 	
 	// --------------- CONSTRUCTOR --------------- //
-	public Dog(Scanner keyboard) {
+	/*
+	 * 	public Dog(Scanner keyboard) {
+		// ask the name of new pet
+		System.out.println("What is the name of your new dog?");
+		
+		// use scanner method to read input
+		name = keyboard.nextLine();
+		
+		// random age in  months
+		int[] dogAge = {1, 2, 3, 4};
+		
+		// random number
+		Random randomAge = new Random();
+		
+		// get random number from the age array
+		int randomAgeIndex = randomAge.nextInt(dogAge.length);
+		
+		// get the random age and set it
+		int randomAgeValue = dogAge[randomAgeIndex];
+		age = randomAgeValue;
+		
+		System.out.println("Welcome " + name + " at the young age of " + age + " months, to your new home!");
+		
+		}	
+	 */
+	
+	public Dog() {
+		
+	}
+	
+	// --------------- METHODS --------------- //
+	public void info(String name, int age) {
 		// ask the name of new pet
 		System.out.println("What is the name of your new dog?");
 		
@@ -58,7 +89,6 @@ public class Dog{
 		
 	}
 	
-	// --------------- METHODS --------------- //
 	public void play() {
 		
 		// --------------- HUNGER --------------- //
