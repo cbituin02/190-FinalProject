@@ -34,6 +34,7 @@ public class Dog{
 	private int sleepIndex;
 	
 	// --------------- CONSTRUCTOR --------------- //
+	
 	  	public Dog(Scanner keyboard) {
 		// ask the name of new pet
 		System.out.println("What is the name of your new dog?");
@@ -57,10 +58,14 @@ public class Dog{
 		System.out.println("Welcome " + name + " at the young age of " + age + " months, to your new home!");
 		
 		}	
+	 
+	
+	public Dog() {
+		
+	}
 	
 	// --------------- METHODS --------------- //
-	/*
-	  	public void info(String name, int age) {
+	public void info(String name, int age) {
 		// ask the name of new pet
 		System.out.println("What is the name of your new dog?");
 		
@@ -81,8 +86,8 @@ public class Dog{
 		age = randomAgeValue;
 		
 		System.out.println("Welcome " + name + " at the young age of " + age + " months, to your new home!");
+		
 	}
-	*/
 	
 	public void play() {
 		
