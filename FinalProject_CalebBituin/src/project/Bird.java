@@ -2,12 +2,7 @@ package project;
 
 import java.util.Scanner;
 import java.util.Random;
-/*
- * TO DO:
- * ORGANIZE CODE LIKE THE PLAY METHOD
- * (HUNGER WITH HUNGER)
- * (ENERGY WITH ENERGY)
- */
+
 public class Bird extends Dog{
 
 	// --------------- FIELDS --------------- //
