@@ -411,9 +411,8 @@ public class Bird extends Dog{
 	 * 
 	 * FIX COMMENTS OF CODE
 	 * 
-	 * COPY PASTE CODE FOR CAT AND BIRD CLASS
-	 * CHANGE VALUES
 	 */
+	
 	public static void main(String[] args) {
 		// Test scanner
 		Scanner consoleScanner = new Scanner(System.in);

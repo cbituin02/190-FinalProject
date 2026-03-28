@@ -35,7 +35,7 @@ public class Dog{
 	
 	// --------------- CONSTRUCTOR --------------- //
 	
-	  	public Dog(Scanner keyboard) {
+  	public Dog(Scanner keyboard) {
 		// ask the name of new pet
 		System.out.println("What is the name of your new dog?");
 		
@@ -57,7 +57,7 @@ public class Dog{
 		
 		System.out.println("Welcome " + name + " at the young age of " + age + " months, to your new home!");
 		
-		}	
+	}	
 	 
 	
 	public Dog() {
@@ -441,9 +441,8 @@ public class Dog{
 	 * 
 	 * FIX COMMENTS OF CODE
 	 * 
-	 * COPY PASTE CODE FOR CAT AND BIRD CLASS
-	 * CHANGE VALUES
 	 */
+	
 	public static void main(String[] args) {
 		// Test scanner
 		Scanner consoleScanner = new Scanner(System.in);
